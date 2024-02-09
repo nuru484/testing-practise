@@ -13,4 +13,5 @@ test('Return calculation', () => {
   const b = 2;
   expect(indexModule.calculator.add(a, b)).toBe(a + b);
   expect(indexModule.calculator.subtract(a, b)).toBe(a - b);
+  expect(indexModule.calculator.multiply(a, b)).toBe(a * b);
 });
