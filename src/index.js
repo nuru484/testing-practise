@@ -52,9 +52,34 @@ const caesarCipher = (str, shiftFactor) => {
   return result;
 };
 
-const analyzeArray = () => {};
+const analyzeArray = (arrayOfNumbers) => {
+  let total = 0;
+  let min = arrayOfNumbers[0];
+  let max = arrayOfNumbers[0];
 
-export default {
+  arrayOfNumbers.forEach((element) => {
+    total += element;
+
+    if (element < min) {
+      min = element;
+    }
+
+    if (element > max) {
+      max = element;
+    }
+  });
+
+  const average = total / arrayOfNumbers.length;
+  const length = arrayOfNumbers.length;
+
+  return { average, min, max, length };
+};
+
+const analyse = analyzeArray([1, 8, 3, 4, 2, 6]);
+
+console.log(analyse);
+
+module.exports = {
   capitalize,
   reverseString,
   calculator,

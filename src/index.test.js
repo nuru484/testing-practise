@@ -1,4 +1,4 @@
-import indexModule from './index';
+const indexModule = require('./index');
 
 test('Capitalize first character', () => {
   expect(indexModule.capitalize('abc')).toBe('Abc');
@@ -24,4 +24,15 @@ test('Shift each character (positive shift)', () => {
   expect(indexModule.caesarCipher(str, positiveShiftFactor)).toBe(
     'Vrph vwulqj wr whvw fdhvduFlskhu Ixqfwlrq'
   );
+});
+
+test('Return object with some properties', () => {
+  const array = [1, 8, 3, 4, 2, 6];
+
+  expect(indexModule.analyzeArray(array)).toEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  });
 });
