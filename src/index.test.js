@@ -9,7 +9,8 @@ test('Reverse string', () => {
 });
 
 test('Return calculation', () => {
-  const a = 1;
-  const b = 1;
+  const a = 4;
+  const b = 2;
   expect(indexModule.calculator.add(a, b)).toBe(a + b);
+  expect(indexModule.calculator.subtract(a, b)).toBe(a - b);
 });
