@@ -24,8 +24,11 @@ const calculator = {
   },
 };
 
+const caesarCipher = (str, shiftFactor) => {};
+
 module.exports = {
   capitalize,
   reverseString,
   calculator,
+  caesarCipher,
 };

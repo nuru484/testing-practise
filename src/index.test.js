@@ -16,3 +16,5 @@ test('Return calculation', () => {
   expect(indexModule.calculator.multiply(a, b)).toBe(a * b);
   expect(indexModule.calculator.divide(a, b)).toBe(a / b);
 });
+
+const caesarCipher = (str, shiftFactor) => {};
