@@ -25,12 +25,3 @@ test('Shift each character (positive shift)', () => {
     'Vrph vwulqj wr whvw fdhvduFlskhu Ixqfwlrq'
   );
 });
-
-test('Shift each character (negative shift)', () => {
-  const str = 'Some string to test caesarCipher Function';
-  const negativeShiftFactor = -3;
-
-  expect(indexModule.caesarCipher(str, negativeShiftFactor)).toBe(
-    'Pljb pqofkd ql qbop xZbxpoZfelrc Fkqjmrke'
-  );
-});

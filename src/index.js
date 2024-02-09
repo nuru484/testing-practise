@@ -24,9 +24,9 @@ const calculator = {
   },
 };
 
-const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-
 const caesarCipher = (str, shiftFactor) => {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
   let result = '';
 
   for (const char of str) {
@@ -51,8 +51,6 @@ const caesarCipher = (str, shiftFactor) => {
 
   return result;
 };
-
-console.log(caesarCipher('Some string to test caesarCipher Function@', 3));
 
 module.exports = {
   capitalize,
