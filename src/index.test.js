@@ -17,4 +17,20 @@ test('Return calculation', () => {
   expect(indexModule.calculator.divide(a, b)).toBe(a / b);
 });
 
-const caesarCipher = (str, shiftFactor) => {};
+test('Shift each character (positive shift)', () => {
+  const str = 'Some string to test caesarCipher Function';
+  const positiveShiftFactor = 3;
+
+  expect(indexModule.caesarCipher(str, positiveShiftFactor)).toBe(
+    'Vrph vwulqj wr whvw fdhvduFlskhu Ixqfwlrq'
+  );
+});
+
+test('Shift each character (negative shift)', () => {
+  const str = 'Some string to test caesarCipher Function';
+  const negativeShiftFactor = -3;
+
+  expect(indexModule.caesarCipher(str, negativeShiftFactor)).toBe(
+    'Pljb pqofkd ql qbop xZbxpoZfelrc Fkqjmrke'
+  );
+});
