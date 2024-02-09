@@ -52,9 +52,12 @@ const caesarCipher = (str, shiftFactor) => {
   return result;
 };
 
-module.exports = {
+const analyzeArray = () => {};
+
+export default {
   capitalize,
   reverseString,
   calculator,
   caesarCipher,
+  analyzeArray,
 };

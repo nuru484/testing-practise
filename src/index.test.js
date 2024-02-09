@@ -1,4 +1,4 @@
-const indexModule = require('./index');
+import indexModule from './index';
 
 test('Capitalize first character', () => {
   expect(indexModule.capitalize('abc')).toBe('Abc');
