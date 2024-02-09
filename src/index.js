@@ -7,7 +7,9 @@ const reverseString = (str) => {
 };
 
 const calculator = {
-  add: (a, b) => {},
+  add: (a, b) => {
+    return a + b;
+  },
   subtract: (a, b) => {},
   multiply: (a, b) => {},
   divide: (a, b) => {},
